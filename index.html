@@ -1,0 +1,2558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Yogii-Tech</title>
+
+<meta name="description" content="Yogii-Tech, founded by Yogeshwaran M, is an MSME-approved startup in Cuddalore & Neyveli, Tamil Nadu. We deliver professional web development, IoT projects, freelancing services, and e-learning programs with expert trainers."/>
+<meta name="keywords" content="Yogesh, Yogesh company, Yogeshwaran M, Yogii, Yogii Tech, Yogi Tech, Yogii Cuddalore, Yogii Neyveli, Web Development Tamil Nadu, IoT Projects Tamil Nadu, Online Courses Tamil Nadu, MSME Startup India"/>
+<meta name="author" content="Yogii-Tech"/>
+
+<link rel="canonical" href="https://mr-yogii.github.io/yogiitech/"/>
+
+<meta property="og:title" content="Yogii-Tech , Web Development, IoT & E-Learning in Tamil Nadu"/>
+<meta property="og:description" content="Founded by Yogeshwaran M in Tamil Nadu, Yogii-Tech offers cutting-edge web solutions, IoT projects, freelancing, and e-learning programs for students and businesses."/>
+<meta property="og:image" content="https://mr-yogii.github.io/yogiitech/images/Trainer/yogii.jpg"/>
+<meta property="og:url" content="https://mr-yogii.github.io/yogiitech/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Yogii-Tech"/>
+
+  <link rel="icon" href="images/Course/Yogii_tech_logo.png" type="image/png"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+ 
+  <style>
+    :root {
+      --primary: #c749d3c4;
+      --primary-dark: #5E2FDB;
+      --primary-light: #9C7CFF;
+      --accent: #739c6c;
+      --dark: #1A1A2E;
+      --dark-light: #2D2D44;
+      --gray: #6C757D;
+      --light: #F8F9FA;
+      --bg-gradient: linear-gradient(135deg, #C548E5 0%, #7A49FF 100%);
+      --card-bg: rgba(255, 255, 255, 0.95);
+      --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
+      --radius: 12px;
+      --radius-lg: 16px;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    html, body {
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark-light);
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .compact-container {
+      max-width: 85%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+      gap: 8px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: var(--dark);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-accent:hover {
+      background: #aa4e24;
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .logo span {
+      color: var(--primary);
+      background: var(--light);
+      padding: 2px 8px;
+      border-radius: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding: 6px 0;
+      transition: var(--transition);
+    }
+
+    .nav-links a.active, 
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      background: var(--primary);
+      transition: var(--transition);
+      border-radius: 3px;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--dark);
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    #hero {
+      padding-top: 120px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-gradient);
+      color: white;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .tech-icons i {
+      font-size: 2.5rem;
+      color: rgba(255, 255, 255, 0.8);
+      transition: var(--transition);
+    }
+
+    .tech-icons i:hover {
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: var(--gray);
+    }
+
+    #about {
+      background: white;
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .cards-col {
+      display: grid;
+      gap: 24px;
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .ceo {
+      text-align: center;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+    }
+
+    .ceo:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .ceo img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 20px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat {
+      text-align: center;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 25px 20px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+    }
+
+    .stat:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stat .counter {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .trainers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+      justify-items: center;
+    }
+
+    .trainer {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+      max-width: 320px;
+    }
+
+    .trainer:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .trainer img {
+      width: 100%;
+      height: 370px;
+      object-fit: cover;
+      transition: var(--transition);
+
+    }
+
+    .trainer .meta {
+      padding: 20px;
+      text-align: center;
+    }
+
+    #services {
+      background: var(--light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(122, 73, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    .service-card h3 {
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .service-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 26, 46, 0.8);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      padding: 20px;
+    }
+
+    .service-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .service-modal-content {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      max-width: 500px;
+      padding: 30px;
+      position: relative;
+      text-align: center;
+    }
+
+    .service-modal-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .service-modal-text {
+      color: var(--gray);
+      margin-bottom: 25px;
+    }
+
+    .service-modal-actions {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .close-service-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--gray);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .close-service-modal:hover {
+      color: var(--primary);
+    }
+
+    #elearning {
+      background: white;
+    }
+
+    .search-container {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 16px 20px 16px 50px;
+      border-radius: 50px;
+      border: 1px solid rgba(122, 73, 255, 0.2);
+      background: white;
+      font-size: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(122, 73, 255, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+    }
+
+    .courses-filter {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: 1px solid rgba(122, 73, 255, 0.2);
+      background: white;
+      color: var(--dark);
+      cursor: pointer;
+      transition: var(--transition);
+      font-weight: 500;
+    }
+
+    .filter-btn.active, 
+    .filter-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: transparent;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 30px;
+    }
+
+    .course-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .course-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-header {
+      padding: 20px 20px 10px;
+      background: white;
+    }
+
+    .course-content {
+      padding: 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .course-description {
+      color: var(--gray);
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .course-price {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: var(--gray);
+    }
+
+    .discount-price {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .discount-badge {
+      background: rgba(57, 255, 20, 0.15);
+      color: #145a24;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .course-toggle {
+      background: none;
+      border: none;
+      color: var(--primary);
+      cursor: pointer;
+      font-weight: 600;
+      text-align: center;
+      margin: 10px 0;
+      padding: 5px;
+      transition: var(--transition);
+    }
+
+    .course-toggle:hover {
+      color: var(--primary-dark);
+    }
+
+    .course-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      background: var(--light);
+      border-radius: 10px;
+    }
+
+    .course-details.active {
+      max-height: 220px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .enroll-btn {
+      margin-top: auto;
+    }
+
+ .video-container {
+  margin-top: 60px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  display: flex;             
+  justify-content: center;  
+  align-items: center;       
+  aspect-ratio: 16 / 9;     
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .video-container {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border: 0;
+  }
+}
+
+
+  
+
+    #testimonials {
+      background: var(--light);
+    }
+
+    .testimonials-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .testimonial {
+      min-width: 100%;
+      padding: 40px;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+    }
+
+    .testimonial-content {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .testimonial-content::before {
+      content: '"';
+      font-size: 5rem;
+      color: rgba(122, 73, 255, 0.1);
+      position: absolute;
+      top: -30px;
+      left: -15px;
+      line-height: 1;
+    }
+
+    .testimonial-content p {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--dark-light);
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .author-info h4 {
+      margin-bottom: 5px;
+      color: var(--dark);
+    }
+
+    .author-info p {
+      margin: 0;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .carousel-nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .nav-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(122, 73, 255, 0.2);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .nav-dot.active {
+      background: var(--primary);
+      transform: scale(1.2);
+    }
+
+    #newsletter {
+      background: var(--bg-gradient);
+      color: white;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    #newsletter .section-title::after {
+      background: white;
+    }
+
+    #newsletter p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #emailInput {
+      flex: 1;
+      min-width: 250px;
+      padding: 16px 20px;
+      border: none;
+      border-radius: 50px;
+      background: white;
+      color: var(--dark);
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    #emailInput:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    }
+
+    #newsletterBtn {
+      padding: 16px 25px;
+      border: none;
+      border-radius: 50px;
+      background-color: var(--accent);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #newsletterBtn:hover {
+      background-color: #5a7c55;
+    }
+
+    #formMessage {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    #contact {
+      background: white;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    
+    .contact-form form {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      padding: 30px;
+      border: 1px solid rgba(122, 73, 255, 0.1);
+    }
+    @media (max-width: 768px) {
+      .contact-form form {
+      padding: 20px;
+      border: 1px solid rgba(122, 73, 255, 0.1);
+      }
+    }
+
+
+    
+    @media (max-width: 576px) {
+      .contact-form form {
+      padding: 15px;
+      border: 1px solid rgba(122, 73, 255, 0.1);
+
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 20px;
+      
+    }
+
+    .form-group label {
+      font-weight: 500;
+      color: var(--dark);
+      margin-bottom: 6px;
+      
+    }
+
+    .form-input {
+      padding: 14px 16px;
+      border: 1px solid rgba(122, 73, 255, 0.2);
+      border-radius: 15px;
+      background: rgb(247, 246, 246);
+      color: var(--dark);
+      font-size: 1rem;
+      transition: var(--transition);
+      resize: vertical;
+      
+
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(122, 73, 255, 0.1);
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(122, 73, 255, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .info-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(122, 73, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .map-container {
+      margin-top: 20px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      flex-wrap: wrap;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+    }
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+      }
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .footer-logo span {
+      color: var(--primary-light);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2px 8px;
+      border-radius: 8px;
+    }
+
+    .footer-content p {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .msme-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 6px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-links h3 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--primary-light);
+      padding-left: 5px;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(211, 106, 106, 0.1);
+      color: rgba(255, 254, 254, 0.986);
+    }
+    .copyright p {
+  color: #50d1e7;
+}
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 26, 46, 0.8);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      padding: 20px;
+    }
+
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      max-width: 900px;
+      padding: 40px;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .modal-sub {
+      color: var(--gray);
+      margin-bottom: 30px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--gray);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .close-btn:hover {
+      color: var(--primary);
+    }
+
+    .enroll-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 30px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .field label {
+      font-weight: 500;
+      color: var(--dark);
+    }
+
+    .field input, 
+    .field select, 
+    .field textarea {
+      padding: 14px 16px;
+      border: 1px solid rgba(122, 73, 255, 0.2);
+      border-radius: 8px;
+      background: white;
+      color: var(--dark);
+      font-size: 1rem;
+    }
+
+    .field input:focus, 
+    .field select:focus, 
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(122, 73, 255, 0.1);
+    }
+
+    .enroll-aside {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 25px;
+    }
+
+    .aside-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(122, 73, 255, 0.1);
+    }
+
+    .aside-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .enroll-actions {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    #chatbot {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1000;
+    }
+
+    #chatbotToggle {
+      background: var(--primary);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+
+    #chatbotToggle:hover {
+      background: var(--primary-dark);
+      transform: scale(1.05);
+    }
+
+    .chat-window {
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      width: 350px;
+      height: 450px;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(122, 73, 255, 0.1);
+    }
+
+    .chat-window.active {
+      display: flex;
+    }
+
+    .chat-header {
+      background: var(--primary);
+      color: white;
+      padding: 15px 20px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-close {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    .chat-body {
+      padding: 20px;
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .message {
+      max-width: 80%;
+      padding: 12px 16px;
+      border-radius: 18px;
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+
+    .message.bot {
+      background: rgba(122, 73, 255, 0.1);
+      border: 1px solid rgba(122, 73, 255, 0.1);
+      align-self: flex-start;
+      border-bottom-left-radius: 5px;
+    }
+
+    .message.user {
+      background: rgba(57, 255, 20, 0.15);
+      border: 1px solid rgba(57, 255, 20, 0.2);
+      align-self: flex-end;
+      border-bottom-right-radius: 5px;
+    }
+
+    .chat-input {
+      display: flex;
+      gap: 10px;
+      padding: 15px;
+      border-top: 1px solid rgba(122, 73, 255, 0.1);
+      background: var(--light);
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid rgba(122, 73, 255, 0.2);
+      border-radius: 50px;
+      background: white;
+      font-size: 0.9rem;
+    }
+
+    .chat-input input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .chat-input button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .chat-input button:hover {
+      background: var(--primary-dark);
+    }
+
+    .indicators {
+      display: flex;
+      gap: 5px;
+      margin: 10px 0;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: rgba(122, 73, 255, 0.3);
+      border-radius: 50%;
+      animation: bounce 1s infinite alternate;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-5px); }
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1100px) {
+      .courses-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
+    @media (max-width: 992px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+      
+      h2 {
+        font-size: 2.2rem;
+      }
+      
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    gap: 25px;
+  }
+}
+
+      .enroll-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .info-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+      }
+      
+      .info-icon {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      h2 {
+        font-size: 2rem;
+      }
+      
+      section {
+        padding: 70px 0;
+      }
+      
+      .menu-toggle {
+        display: block;
+      }
+      
+      nav {
+        position: relative;
+      }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 100px 30px 30px;
+        box-shadow: var(--shadow-lg);
+        transition: var(--transition);
+        z-index: 999;
+      }
+      
+      .nav-links.active {
+        right: 0;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .trainers-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #emailInput {
+        min-width: 100%;
+        margin-bottom: 15px;
+      }
+      
+      .video-container iframe {
+        height: 300px;
+        width: 100%;
+      }
+
+      .service-modal-actions {
+        flex-direction: column;
+      }
+      
+      .testimonial {
+        padding: 30px 20px;
+      }
+      
+      .contact-form form {
+        padding: 20px;
+      }
+      
+      .info-item {
+        padding: 15px;
+      }
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .social-links {
+        justify-content: center;
+      }
+      
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .map-container iframe {
+        height: 250px;
+      }
+      
+      .form-group {
+        margin-bottom: 15px;
+      }
+      
+      .form-input {
+        padding: 12px 14px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      h2 {
+        font-size: 1.8rem;
+      }
+      
+      .container, .compact-container {
+        padding: 0 15px;
+      }
+      
+      .stats {
+        grid-template-columns: 1fr;
+      }
+      
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .testimonial {
+        padding: 20px 15px;
+      }
+      
+      .modal-content, .service-modal-content {
+        padding: 30px 20px;
+      }
+      
+      .chat-window {
+        width: calc(100vw - 40px);
+        right: 20px;
+      }
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero-content {
+        max-width: 95%;
+      }
+      
+      .tech-icons i {
+        font-size: 2rem;
+      }
+      
+      .ceo img {
+        width: 150px;
+        height: 150px;
+      }
+      
+      .courses-filter {
+        gap: 8px;
+      }
+      
+      .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+      
+      .course-card {
+        margin: 0 auto;
+        max-width: 320px;
+      }
+
+      .contact-form form {
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+      }
+      @media (max-width: 576px) {
+        .contact-form form {
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        left: 10px;
+        right: 100px;
+        position: relative;
+        
+        }
+        
+      }
+      
+      .info-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        
+      }
+      
+      .info-icon {
+        margin-bottom: 10px;
+      }
+      
+      .map-container iframe {
+        height: 200px;
+      }
+      
+      .form-input, .form-group textarea {
+        font-size: 16px;
+        left: 10px;
+        padding: 12px 14px;
+        font-size: 0.95rem;
+
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="compact-container header-container">
+    <div class="logo">Y<span>๏</span>gii-Tech</div>
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#elearning">E-Learning</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="compact-container hero-content">
+    <h1 class="fade-up">Building Web Solutions & Future Tech Leaders</h1>
+    <p class="fade-up">Freelancing excellence powered by an evolving e-learning hub. MSME Approved Startup based in Cuddalore & Neyveli.</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary fade-up" href="#services">Hire Us</a>
+      <button class="btn btn-accent fade-up" id="enrollBtn">Enroll Now</button>
+    </div>
+    <div class="tech-icons">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-react"></i>
+      <i class="fab fa-node"></i>
+      <i class="fas fa-microchip"></i>
+      <i class="fas fa-robot"></i>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="compact-container">
+    <div class="section-header">
+      <h2 class="section-title fade-up">About Us</h2>
+      <p class="section-subtitle fade-up">MSME Approved Startup based in Cuddalore & Neyveli</p>
+    </div>
+    <div class="about-grid">
+      <div class="cards-col fade-up">
+        <div class="info-card">
+          <h3>Our Mission</h3>
+          <p>To empower individuals and businesses with cutting-edge technology solutions and education, fostering innovation and digital transformation.</p>
+        </div>
+        <div class="info-card">
+          <h3>Our Vision</h3>
+          <p>To be a leading technology service provider and education platform bridging the gap between industry expectations and skill development.</p>
+        </div>
+        <div class="info-card">
+          <h3>Our Approach</h3>
+          <p>We combine practical industry experience with comprehensive training methodologies to deliver real-world solutions and build future-ready professionals.</p>
+        </div>
+      </div>
+      <div class="ceo fade-up">
+        <img src="images/Trainers/yogii.jpg" alt="CEO">
+        <h3>Yogeshwaran</h3>
+        <p>Founder & CEO</p>
+        <p>Technology enthusiast with a passion for education and innovation, dedicated to bridging the gap between academia and industry. <br> Friendly and approachable.</p>
+      
+
+          <a href="https://mr-yogii.github.io/yogii_portfolio/" target="_blank" aria-label="Portfolio"><i class="fas fa-globe">Yogesh</i></a>
+        
+      </div>
+    </div>
+    <div class="stats fade-up">
+      <div class="stat">
+        <div class="counter" data-target="47">0</div>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat">
+        <div class="counter" data-target="270">0</div>
+        <p>Students Trained</p>
+      </div>
+      <div class="stat">
+        <div class="counter" data-target="3">0</div>
+        <p>Expert Trainers</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top: 60px;">
+      <h3 class="section-title fade-up">Our Expert Trainers</h3>
+      <p class="section-subtitle fade-up">Learn from industry professionals with real-world experience</p>
+    </div>
+    <div class="trainers-grid">
+      <div class="trainer fade-up">
+        <img src="images/Trainers/muthu.jpg" alt="Trainer">
+        <div class="meta">
+          <h4>Ms.Muthu Selvi B</h4>
+          <p>AI/ML Specialist</p>
+          <p>Research background in machine learning algorithms and data analysis techniques.</p>
+        </div>
+       
+      </div>
+      <div class="trainer fade-up">
+        <img src="images/Trainers/yogesh.jpg" alt="Trainer">
+        <div class="meta">
+          <h4>Mr.Yogeshwaran M</h4>
+          <p>IoT & Embedded Systems  | <br> Full Stack Developer</p>
+          <p>Expert in embedded programming and hardware design, well-versed in IoT architectures, with 3+ years of experience in web technologies.</p>
+        </div>
+      </div>
+      <div class="trainer fade-up">
+         <img src="/images/Trainers/suba.jpg" alt="Trainer">
+        <div class="meta">
+          <h4>Ms. Subha M</h4>
+          <p>UI/UX Designer &<br>Data Analytics</p>
+          <p>Have 2+ years of experience in data analysis and visualization techniques to derive insights from complex datasets.
+          </p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="compact-container">
+    <div class="section-header">
+      <h2 class="section-title fade-up">Our Services</h2>
+      <p class="section-subtitle fade-up">Professional-grade offerings for businesses and learners</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up" data-service="Full Stack Web Development">
+        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Full Stack Web Development</h3>
+        <p>Modern frontend + backend using React, Node.js and scalable architectures for responsive web applications.</p>
+        <div class="btn btn-primary">Learn More</div>
+      </div>
+      <div class="service-card fade-up" data-service="IoT & Embedded Projects">
+        <div class="service-icon"><i class="fas fa-microchip"></i></div>
+        <h3>IoT & Embedded Projects</h3>
+        <p>School/college/industrial projects with firmware, boards and sensors for real-world applications.</p>
+        <div class="btn btn-primary">Learn More</div>
+      </div>
+      <div class="service-card fade-up" data-service="One‑One Mentorship">
+        <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>One‑One Mentorship on Building Own Projects</h3>
+        <p>Guided project building with personalized checkpoints and career guidance from industry experts.</p>
+        <div class="btn btn-primary">Learn More</div>
+      </div>
+      <div class="service-card fade-up" data-service="Online Tuition (5‑12)">
+        <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Online Tuition (5‑12)</h3>
+        <p>Trusted tutors online only with progress tracking and customized learning plans for students.</p>
+        <div class="btn btn-primary">Learn More</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="service-modal" id="serviceModal">
+  <div class="service-modal-content">
+    <button class="close-service-modal" id="closeServiceModal" aria-label="Close">&times;</button>
+    <h3 class="service-modal-title" id="serviceModalTitle">Service Title</h3>
+    <p class="service-modal-text">Interested in this service? Contact us directly through WhatsApp or email for more information.</p>
+    <div class="service-modal-actions">
+      <a href="https://wa.me/919344073844" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="mailto:infoyogiitech@gmail.com" class="btn btn-outline"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </div>
+</div>
+
+<section id="elearning">
+  <div class="compact-container">
+    <div class="section-header">
+      <h2 class="section-title fade-up">E-Learning Programs</h2>
+      <p class="section-subtitle fade-up">Courses include lectures, live Q&A, reviews and mentorship</p>
+    </div>
+    <div class="search-container fade-up">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" class="search-input" placeholder="Search for courses..." id="courseSearch">
+    </div>
+    <div class="courses-filter fade-up">
+      <button class="filter-btn active" data-filter="all">All Courses</button>
+      <button class="filter-btn" data-filter="software">Software</button>
+      <button class="filter-btn" data-filter="hardware">Hardware</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="iot">IoT & Embedded</button>
+    </div>
+    <div class="courses-grid" id="coursesContainer"></div>
+    <!-- <div class="video-container fade-up">
+      <iframe
+    srcdoc='
+      <video  controls>
+        <source src="images/Course/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    '>
+  </iframe>
+    </div> -->
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="compact-container">
+    <div class="section-header">
+      <h2 class="section-title fade-up">What Our Clients Say</h2>
+      <p class="section-subtitle fade-up">Trusted by founders, product teams and learners</p>
+    </div>
+    <div class="testimonials-container fade-up">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Yogii-Tech completely transformed our web presence. Their attention to detail and technical expertise resulted in a website that not only looks stunning but also performs exceptionally well. Incredible quality!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson" class="author-avatar">
+            <div class="author-info">
+              <h4>Ms.Swathi</h4>
+              <p>Small Business Owner</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Our app redesign is intuitive and on-brand. The team at Yogii-Tech understood our vision and executed it perfectly. User engagement increased by 40% after launch, which exceeded our expectations."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael" class="author-avatar">
+            <div class="author-info">
+              <h4>Benjamin</h4>
+              <p>T-shirt Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-nav" id="carouselNav"></div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter">
+  <div class="compact-container">
+    <div class="newsletter-content fade-up">
+      <h2>Stay Updated with the Latest Tech Trends</h2>
+      <p>Subscribe for insights, course updates and exclusive offers.</p>
+      <form id="newsletterForm">
+        <div class="newsletter-form">
+          <input type="email" id="emailInput" name="email" placeholder="Enter your email address" required>
+          <button type="submit" id="newsletterBtn" class="btn btn-accent">Subscribe</button>
+        </div>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="compact-container">
+    <div class="section-header">
+      <h2 class="section-title fade-up">Get In Touch</h2>
+      <p class="section-subtitle fade-up">Have a project or want to learn more? Reach out to us.</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-form fade-up">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-input" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info fade-up">
+        <div class="info-item">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h3>Locations</h3>
+            <p>Cuddalore <br> Inda Nagar Neyveli - 607801</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+            <h3>Phone</h3>
+            <p><a href="tel:+919344073844" style="color:inherit;text-decoration:none;">+91 9344073844</a></p>
+            </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+            <h3>Email</h3>
+            <p><a href="mailto:infoyogiitech@gmail.com" style="color:inherit;text-decoration:none;">infoyogiitech@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+           <div>
+  <h3>WhatsApp</h3>
+  <p>
+    <a href="https://wa.me/919344073844?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+       style="color:inherit;text-decoration:none;" 
+       target="_blank">
+      +91 9344073844
+    </a>
+  </p>
+</div>
+
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d291.3275546657325!2d79.54113489248455!3d11.615177670050917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1757848784497!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="compact-container">
+    <div class="footer-content">
+      <div>
+        <div class="footer-logo">Y<span>✓</span>gii-Tech</div>
+        <p>Building the future of web solutions and tech education through innovation and excellence.</p>
+        <div class="msme-badge">MSME Approved Startup</div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_yogii_i"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/yogii15/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919344073844?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services."><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#elearning">E-Learning</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">SEO Optimization</a></li>
+          <li><a href="#services">IoT Projects</a></li>
+          <li><a href="#services">Online Tuition</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h3>Courses</h3>
+        <ul>
+          <li><a href="#elearning">Full Stack Development</a></li>
+          <li><a href="#elearning">React JS</a></li>
+          <li><a href="#elearning">MongoDB</a></li>
+          <li><a href="#elearning">IoT & Embedded Systems</a></li>
+          <li><a href="#elearning">View All Courses</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Yogii-Tech. All rights reserved. | MSME Approved Startup</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="enrollModal">
+  <div class="modal-content">
+    <button class="close-btn" id="closeModal" aria-label="Close">&times;</button>
+    <h3 class="modal-title">Enroll in a Course</h3>
+    <p class="modal-sub">Fill the details below and we'll reach out with next steps.</p>
+    <div class="enroll-grid">
+      <div>
+        <form id="enrollForm">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" id="enrollName" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" id="enrollEmail" placeholder="name@email.com" required>
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" id="enrollPhone" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+          <div class="field">
+            <label>Course</label>
+            <select id="enrollCourse" required>
+              <option value="">Select Course</option>
+              <option>Full Stack Development</option>
+              <option>Web Design</option>
+              <option>React JS</option>
+              <option>MongoDB</option>
+              <option>Verilog</option>
+              <option>System Verilog</option>
+              <option>IoT</option>
+              <option>Embedded C</option>
+              <option>Arduino Uno</option>
+              <option>AI/ML</option>
+              <option>Image Processing</option>
+              <option>ESP32</option>
+              <option>Raspberry Pi</option>
+            </select>
+          </div>
+          <div class="enroll-actions">
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+            <a class="btn btn-outline" href="https://wa.me/919344073844" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </form>
+      </div>
+      <div class="enroll-aside">
+        <h4>Course Benefits</h4>
+        <div class="aside-item">
+          <span>Schedule</span>
+          <strong>Flexible</strong>
+        </div>
+        <div class="aside-item">
+          <span>Mentorship</span>
+          <strong>1:1</strong>
+        </div>
+        <div class="aside-item">
+          <span>Projects</span>
+          <strong>Real-world</strong>
+        </div>
+        <div class="aside-item">
+          <span>Certificate</span>
+          <strong>Upon Completion</strong>
+        </div>
+        <p style="margin-top: 20px;">Prefer email? Write to us at <a href="mailto:infoyogiitech@gmail.com">Yogii_Tech offficial mail</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="chatbot">
+  <button id="chatbotToggle"><i class="fas fa-comment"></i></button>
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      Yogii Assistant
+      <button class="chat-close" id="chatClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="message bot">Hello! How can I help you today? Ask about our services, courses, or contact details.</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type a message...">
+      <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const courses = [
+    { id:1, title:"Full Stack Web Development", category:"software", subcategory:"web", image:"images/Course/full_stack.jpg", description:"Master frontend and backend with React, Node.js and MongoDB.", originalPrice:5999, discount:20, duration:"6 months", projects:5, level:"Beginner to Advanced" },
+    { id:2, title:"Web Design", category:"software", subcategory:"web", image:"https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", description:"UI/UX fundamentals, wireframes, prototypes & responsive design.", originalPrice:2999, discount:15, duration:"3 months", projects:3, level:"Beginner to Intermediate" },
+    { id:3, title:"React JS", category:"software", subcategory:"web", image:"https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", description:"Modern SPA development with React, hooks and routing.", originalPrice:4999, discount:10, duration:"2 months", projects:4, level:"Intermediate" },
+    { id:4, title:"MongoDB", category:"software", subcategory:"web", image:"https://images.unsplash.com/photo-1544652478-6653e09f18a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", description:"NoSQL design, queries, aggregation and Node integration.", originalPrice:1499, discount:10, duration:"1.5 months", projects:2, level:"Intermediate" },
+    { id:5, title:"IoT & Embedded Systems", category:"hardware", subcategory:"iot", image:"images/Course/iot.jpg", description:"Design & build IoT devices, firmware & integration.", originalPrice:8999, discount:25, duration:"4 months", projects:6, level:"Beginner to Advanced" },
+    { id:6, title:"Arduino Uno", category:"hardware", subcategory:"iot", image:"images/Course/ardiuno.jpg", description:"Hands-on Arduino programming and projects.", originalPrice:3999, discount:15, duration:"2 months", projects:5, level:"Beginner" },
+    { id:7, title:"ESP32 Full Guide", category:"hardware", subcategory:"iot", image:"images/Course/esp32.jpg", description:"WiFi/Bluetooth dev with ESP32; real-world apps.", originalPrice:3999, discount:20, duration:"2.5 months", projects:4, level:"Intermediate" },
+    { id:8, title:"Raspberry Pi Full Guide", category:"hardware", subcategory:"iot", image:"images/Course/raspberrypi.jpg", description:"Home automation, media center & IoT solutions with Pi.", originalPrice:3999, discount:20, duration:"3 months", projects:5, level:"Intermediate" },
+    { id:9, title:"AI/ML Fundamentals", category:"software", subcategory:"ai", image:"images/Course/ai_ml.jpg", description:"Supervised learning, evaluation and deployment basics.", originalPrice:7999, discount:10, duration:"5 months", projects:4, level:"Advanced" },
+    { id:10, title:"Embedded C Programming", category:"hardware", subcategory:"iot", image:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", description:"C for microcontrollers, registers and peripherals.", originalPrice:2999, discount:15, duration:"2 months", projects:3, level:"Intermediate" },
+    { id:11, title:"Verilog & System Verilog", category:"hardware", subcategory:"embedded", image:"https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", description:"HDL for design and verification workflows.", originalPrice:5999, discount:15, duration:"4 months", projects:4, level:"Advanced" },
+    { id:12, title:"Image Processing", category:"software", subcategory:"ai", image:"https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", description:"Filters, features, segmentation, classical CV.", originalPrice:3999, discount:10, duration:"3 months", projects:4, level:"Intermediate to Advanced" }
+  ];
+
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const enrollBtn = document.getElementById('enrollBtn');
+  const enrollModal = document.getElementById('enrollModal');
+  const closeModal = document.getElementById('closeModal');
+  const chatbotToggle = document.getElementById('chatbotToggle');
+  const chatWindow = document.getElementById('chatWindow');
+  const chatClose = document.getElementById('chatClose');
+  const chatInput = document.getElementById('chatInput');
+  const chatSend = document.getElementById('chatSend');
+  const chatBody = document.getElementById('chatBody');
+  const counters = document.querySelectorAll('.counter');
+  const testimonialTrack = document.getElementById('testimonialTrack');
+  const carouselNav = document.getElementById('carouselNav');
+  const coursesContainer = document.getElementById('coursesContainer');
+  const courseSearch = document.getElementById('courseSearch');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const serviceModal = document.getElementById('serviceModal');
+  const serviceModalTitle = document.getElementById('serviceModalTitle');
+  const closeServiceModal = document.getElementById('closeServiceModal');
+  const serviceCards = document.querySelectorAll('.service-card');
+
+
+
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzt_L-c99yQVOeES7_nESg5CrKj4_wkVue2VAACzaxtt6EtOBVYmGSjWxZKBJ4J4H36/exec";
+
+
+const closeModalBtn = document.getElementById("closeModal");
+const enrollForm = document.getElementById("enrollForm");
+const contactForm = document.getElementById("contactForm");
+const newsletterForm = document.getElementById("newsletterForm");
+const msg = document.getElementById("formMessage");
+
+function openEnrollModal() {
+  enrollModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+closeModalBtn.addEventListener("click", () => {
+  enrollModal.classList.remove("active");
+  document.body.style.overflow = "auto";
+});
+
+enrollForm.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  
+  const formData = new FormData();
+  formData.append("type","enroll");
+  formData.append("enrollName", document.getElementById("enrollName").value.trim());
+  formData.append("enrollEmail", document.getElementById("enrollEmail").value.trim());
+  formData.append("enrollPhone", document.getElementById("enrollPhone").value.trim());
+  formData.append("enrollCourse", document.getElementById("enrollCourse").value.trim());
+
+  fetch(SCRIPT_URL, {method:"POST", body:formData})
+    .then(res => res.text())
+    .then(txt => {
+      const data = JSON.parse(txt);
+      if(data.result === "success"){
+        alert("Enrollment submitted successfully!");
+        enrollForm.reset();
+        enrollModal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      } else {
+        alert("-" + (data.message || "Something went wrong"));
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      alert("Network error, try again.");
+    });
+});
+
+newsletterForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  const email = document.getElementById('emailInput').value.trim();
+  const formData = new FormData();
+  formData.append("type","newsletter");
+  formData.append("email", email);
+
+  msg.textContent = "Subscribing...";
+  fetch(SCRIPT_URL,{method:"POST", body:formData})
+    .then(res => res.text())
+    .then(txt => {
+      const data = JSON.parse(txt);
+      if(data.result === "success"){
+        msg.style.color="white";
+        msg.textContent="Thanks for subscribing!";
+        newsletterForm.reset();
+      } else {
+        msg.style.color="#ffcccc";
+        msg.textContent="-"+(data.message || "Something went wrong");
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      msg.style.color="#ffcccc";
+      msg.textContent=" Network error. Please try again.";
+    });
+});
+
+contactForm.addEventListener("submit", function(e){
+  e.preventDefault();
+  const formData = new FormData();
+  formData.append("type","contact");
+  formData.append("name", document.getElementById("name").value.trim());
+  formData.append("email", document.getElementById("email").value.trim());
+  formData.append("subject", document.getElementById("subject").value.trim());
+  formData.append("message", document.getElementById("message").value.trim());
+
+  fetch(SCRIPT_URL,{method:"POST", body:formData})
+    .then(res => res.text())
+    .then(txt => {
+      const data = JSON.parse(txt);
+      if(data.result === "success"){
+        alert("Message sent successfully!");
+        contactForm.reset();
+      } else {
+        alert("- "+(data.message || "Something went wrong"));
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      alert(" Network error. Please try again.");
+    });
+});
+
+
+
+  serviceCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const serviceName = card.dataset.service;
+      serviceModalTitle.textContent = serviceName;
+      serviceModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  closeServiceModal.addEventListener('click', () => {
+    serviceModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === serviceModal) {
+      serviceModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { 
+        entry.target.classList.add('visible'); 
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, { threshold: 0.15 });
+
+  function renderCourses(list){
+    coursesContainer.innerHTML='';
+    list.forEach(c=>{
+      const newPrice = c.originalPrice - (c.originalPrice * c.discount / 100);
+      const card = document.createElement('div');
+      card.className='course-card fade-up';
+      card.innerHTML=`
+        <img src="${c.image}" alt="${c.title}" class="course-image">
+        <div class="course-header"><h3>${c.title}</h3></div>
+        <div class="course-content">
+          <div class="course-description"><p>${c.description}</p></div>
+          <div class="course-price">
+            <span class="original-price">₹${c.originalPrice}</span>
+            <span class="discount-price">₹${newPrice}</span>
+            <span class="discount-badge">${c.discount}% OFF</span>
+          </div>
+          <button class="course-toggle">View Details +</button>
+          <div class="course-details">
+            <p><strong>Duration:</strong> ${c.duration}</p>
+            <p><strong>Projects:</strong> ${c.projects}</p>
+            <p><strong>Level:</strong> ${c.level}</p>
+            <p><strong>Mentorship:</strong> Weekly 1:1 sessions</p>
+          </div>
+          <button class="btn btn-primary enroll-btn" data-course="${c.title}">Enroll Now</button>
+        </div>`;
+      coursesContainer.appendChild(card);
+    });
+    document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+    document.querySelectorAll('.course-toggle').forEach(t=>{
+      t.addEventListener('click',()=>{
+        const d = t.nextElementSibling;
+        d.classList.toggle('active');
+        t.textContent = d.classList.contains('active') ? 'Hide Details -' : 'View Details +';
+      });
+    });
+    document.querySelectorAll('.enroll-btn').forEach(b=>{
+      b.addEventListener('click',()=>{
+        const name=b.dataset.course;
+        enrollModal.classList.add('active');
+        document.body.style.overflow='hidden';
+        const select = document.getElementById('enrollCourse');
+        for(let i=0;i<select.options.length;i++){
+          if(select.options[i].text===name){select.selectedIndex=i;break;}
+        }
+      });
+    });
+  }
+
+  function filterCourses(){
+    const s = courseSearch.value.toLowerCase();
+    const f = document.querySelector('.filter-btn.active').dataset.filter;
+    const filtered = courses.filter(c=>{
+      const matchesText = c.title.toLowerCase().includes(s) || c.description.toLowerCase().includes(s);
+      const matchesFilter = f==='all' || c.category===f || c.subcategory===f;
+      return matchesText && matchesFilter;
+    });
+    renderCourses(filtered);
+  }
+
+  renderCourses(courses);
+
+  menuToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle('active');
+    menuToggle.innerHTML = navLinks.classList.contains('active')?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';
+  });
+
+  enrollBtn.addEventListener('click',()=>{enrollModal.classList.add('active');document.body.style.overflow='hidden';});
+  closeModal.addEventListener('click',()=>{enrollModal.classList.remove('active');document.body.style.overflow='auto';});
+  window.addEventListener('click',(e)=>{if(e.target===enrollModal){enrollModal.classList.remove('active');document.body.style.overflow='auto';}});
+
+  chatbotToggle.addEventListener('click',()=>chatWindow.classList.toggle('active'));
+  chatClose.addEventListener('click',()=>chatWindow.classList.remove('active'));
+
+  function addMessage(text, sender){
+    const div=document.createElement('div');div.className=`message ${sender}`;div.textContent=text;chatBody.appendChild(div);chatBody.scrollTop=chatBody.scrollHeight;
+  }
+  chatSend.addEventListener('click',()=>{
+    const msg=chatInput.value.trim(); if(!msg) return;
+    addMessage(msg,'user'); chatInput.value='';
+    const typing=document.createElement('div'); typing.className='indicators'; typing.innerHTML='<div class="dot"></div><div class="dot"></div><div class="dot"></div>'; chatBody.appendChild(typing);
+ 
+ function findCourse(query) {
+  const q = query.toLowerCase();
+  return courses.find(c =>
+    c.title.toLowerCase().includes(q) ||
+    c.subcategory.toLowerCase().includes(q) ||
+    c.category.toLowerCase().includes(q)
+  );
+}
+
+
+   setTimeout(()=>{
+  chatBody.removeChild(typing);
+  let resp = "Please explore our Services and E-Learning for full details.";
+  const m = msg.toLowerCase();
+
+  const course = findCourse(m);
+  if (course) {
+    if (m.includes("price") || m.includes("cost") || m.includes("fees")) {
+      resp = `${course.title} is priced at ₹${course.originalPrice}, with ${course.discount}% discount.`;
+    } else if (m.includes("duration") || m.includes("time")) {
+      resp = `${course.title} runs for ${course.duration}.`;
+    } else if (m.includes("project") || m.includes("projects")) {
+      resp = `${course.title} includes ${course.projects} hands-on projects.`;
+    } else if (m.includes("level")) {
+      resp = `${course.title} is suitable for ${course.level} learners.`;
+    } else {
+      resp = `${course.title}: ${course.description} Duration: ${course.duration}, Price: ₹${course.originalPrice} (${course.discount}% off), Projects: ${course.projects}, Level: ${course.level}.`;
+    }
+  } else if (m.includes('service')) {
+    resp = "Services: Full Stack Web Development, SEO Optimization, IoT & Embedded Projects, One-One Mentorship, Online Tuitions.";
+  } else if (m.includes('course') || m.includes('learn') || m.includes('training')) {
+    resp = "Courses: Web Development, Web Design, Full Stack, React JS, MongoDB, Verilog, System Verilog, IoT, Embedded C, Arduino Uno, AI/ML, Image Processing, ESP32 Full Guide, Raspberry Pi Full Guide.";
+  } else if (m.includes('contact') || m.includes('email') || m.includes('phone') || m.includes('whatsapp')) {
+    resp = "Contact: +91 9344073844 | Email: infoyogiitech@gmail.com | WhatsApp: wa.me/919344073844 | Location: Cuddalore, Neyveli.";
+  } else if (m.includes('location') || m.includes('address')) {
+    resp = "We are in Cuddalore and Neyveli. Both on-site and online consultations available.";
+  } else if (m.includes('hello') || m.includes('hi')) {
+    resp = "Hello!  How can I assist? You can ask about Services, Courses, or Contact info.";
+  } else if (m.includes('who are you') || m.includes('your name')) {
+    resp = "I am Yogii , your assistant for Yogii-Tech. Ask me about our services and courses.";
+  } else if (m.includes('thanks') || m.includes('thank you')) {
+    resp = "You're welcome Happy to help!";
+  }
+
+  addMessage(resp, 'bot');
+}, 900);
+
+
+  });
+  chatInput.addEventListener('keypress',(e)=>{if(e.key==='Enter'){e.preventDefault();chatSend.click();}});
+
+  document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+
+  const counterObserver = new IntersectionObserver((entries,obs)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const el=entry.target; const target=+el.dataset.target; let curr=0; const step=Math.ceil(target/60);
+        const tick=()=>{curr+=step; if(curr<target){el.textContent=curr; requestAnimationFrame(tick);} else {el.textContent=target;}}
+        tick(); obs.unobserve(el);
+      }
+    });
+  },{threshold:.6});
+  counters.forEach(c=>counterObserver.observe(c));
+
+  const slides=document.querySelectorAll('#testimonialTrack .testimonial');
+  slides.forEach((_,i)=>{const d=document.createElement('div'); d.className='nav-dot'+(i===0?' active':''); d.addEventListener('click',()=>moveCarousel(i)); carouselNav.appendChild(d);});
+  let tIndex=0;
+  function moveCarousel(i){tIndex=i; testimonialTrack.style.transform=`translateX(-${i*100}%)`; document.querySelectorAll('.nav-dot').forEach((d,di)=>d.classList.toggle('active',di===i));}
+  setInterval(()=>{tIndex=(tIndex+1)%slides.length; moveCarousel(tIndex);},5000);
+
+  courseSearch.addEventListener('input',filterCourses);
+  filterBtns.forEach(b=>b.addEventListener('click',()=>{document.querySelector('.filter-btn.active').classList.remove('active'); b.classList.add('active'); filterCourses();}));
+
+  const navLinksEls=document.querySelectorAll('#navLinks a'); 
+  const sectionsEls=document.querySelectorAll('section');
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY+120; 
+    let current='hero'; 
+    sectionsEls.forEach(sec=>{
+      if(y>=sec.offsetTop) current=sec.id;
+    }); 
+    navLinksEls.forEach(a=>a.classList.toggle('active', a.getAttribute('href')===`#${current}`));
+  });
+
+  
+  navLinksEls.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetEl = document.getElementById(targetId);
+    const y = targetEl.offsetTop - 100; 
+    window.scrollTo({ top: y, behavior: 'smooth' });
+    navLinks.classList.remove('active');
+  });
+});
+
+
+  
+</script>
+</body>
+</html>
